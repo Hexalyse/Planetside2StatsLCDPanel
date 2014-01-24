@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace Planetside2LCDStats
@@ -12,6 +13,7 @@ namespace Planetside2LCDStats
         private static void Main()
         {
             Application.EnableVisualStyles();
+            Application.CurrentCulture = CultureInfo.InvariantCulture;
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
         }
